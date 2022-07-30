@@ -1,0 +1,186 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body{
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.mobile{
+    background-color: rgb(87, 28, 87);
+    z-index: 1111;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    transition:all 500ms linear;
+}
+
+#check{
+    display: none; 
+}
+
+label img,label p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+z-index: 1112;
+}
+
+label p{
+    top: 58%;
+    color: white;
+    font-size: 30px;
+}
+
+label img{
+    width: 60px;
+    height: 60px;
+}
+
+#check:checked ~ .mobile{
+    left: 130vw;
+}
+
+#check:checked ~ label img{
+    left: 0;
+    display: none;
+    pointer-events: none;
+}
+
+#check:checked ~ label p{
+    left: 0;
+    opacity: 0;
+    pointer-events:none;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    z-index: -2222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0 30px 0;
+}
+
+.logo-1 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.text h3{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input{   
+ margin: 0 auto 15px auto;
+padding: 25px 40px;
+border-radius: 10px;
+width: 300px;
+    height: 30px;
+}
+
+form input:focus{
+    outline-color: rgb(87, 28, 87) ;
+}
+
+::placeholder{
+    font-size: 18px;
+}
+
+.policies p{
+     padding: 0 25px;
+    z-index: -2222;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.policies p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+.policies-2{
+    transform: translateX(-70px);
+}
+
+.policies-2 p{
+    text-align: right;
+    z-index: -2222;
+    width: 100%;
+}
+
+.policies-2 p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.submit,.submit-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.submit-2{
+    margin-top: 200px;
+}
+
+.sign-in,.sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-1,.button-2{
+    padding: 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(87, 28, 87);
+    color: white;
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.par{
+    z-index: -2222;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+ .sign-in a,.sign-up a{
+    text-decoration: none; 
+    color:  rgb(87, 28, 87);
+    font-weight: 500;
+} 
